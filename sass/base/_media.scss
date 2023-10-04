@@ -170,6 +170,21 @@
   .catalog-item__back {
     top: 360px;
   }
+
+  .feeds__item {
+    width: 70%;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+    text-align: center;
+    &_img {
+      width: 60%;
+      height: auto;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
 }
 
 @media (max-width: 320px) {
@@ -300,6 +315,24 @@
     }
     &__phone {
       margin-bottom: 16px;
+    }
+  }
+
+  .modal {
+    width: 70%;
+    top: -45%;
+    padding: 10px;
+    &__descr {
+      margin-bottom: 10px;
+    }
+    .feed-form {
+      padding-left: 25px;
+      input, button {
+        width: 56%;
+      }
+      button {
+        font-size: 12px;
+      }
     }
   }
 }
