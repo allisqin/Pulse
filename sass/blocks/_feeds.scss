@@ -1,0 +1,30 @@
+.feeds {
+  padding: 60px 0 70px 0;
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 48px;
+    padding-top: 54px;
+    border-bottom: 1px solid #f6f6f6;
+}
+  &-item_img {
+    max-height: 170px;
+    margin-right: 66px;
+  }
+  &-item_name {
+    color: #0d0d0d;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  &-item_subs {
+    color: #646464;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 15px;
+  }
+  &-item_text {
+    color: #0d0d0d;
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
