@@ -176,12 +176,13 @@
     margin: 0 auto;
     flex-direction: column;
     justify-content: center;
-    justify-content: center;
+    align-items: center;
     text-align: center;
     &_img {
       width: 300px;
       height: auto;
       margin: 0 auto;
+      margin-bottom: 10px;
     }
   }
   .modal {
@@ -291,11 +292,12 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-    }
-    &-item_img {
-      width: 300px;
-      height: auto;
-      margin: 0 auto;
+      &_img {
+        width: 253px;
+        height: auto;
+        margin: 0 auto;
+        margin-left: -14px;
+      }
     }
     &-item_subs {
       margin-bottom: 10px;
