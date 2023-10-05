@@ -185,6 +185,9 @@
       margin-bottom: 10px;
     }
   }
+  .modal__close {
+   display: none;
+  }
 }
 
 @media (max-width: 320px) {
@@ -288,7 +291,7 @@
       text-align: center;
     }
     &-item_img {
-      margin-right: 0;
+      max-height: 300px;
       margin: 0 auto;
     }
     &-item_subs {
@@ -319,9 +322,10 @@
   }
 
   .modal {
-    width: 70%;
+    width: 75%;
     top: -45%;
     padding: 10px;
+    margin-left: 0;
     &__descr {
       margin-bottom: 10px;
     }
