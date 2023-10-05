@@ -186,10 +186,12 @@
     }
   }
   .modal {
+    width: 550px;
     margin-right: 0;
-  }
-  .modal__close {
-   display: none;
+    margin-left: 0;
+    &__close {
+      display: none;
+    }
   }
 }
 
