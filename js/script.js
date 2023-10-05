@@ -85,9 +85,9 @@ $('.modal__close').on('click', function () {
   $('.overlay, #consultation, #order, #thanks').fadeOut('slow');
 });
 
-$('.overlay').on('click', function () {
-  $('.overlay, #consultation, #order, #thanks').fadeOut('slow');
-});
+// $('.overlay').on('click', function () {
+//   $('.overlay, #consultation, #order, #thanks').fadeOut('slow');
+// });
 
 $('.button_mini').each(function (i) { 
   $(this).on('click', function () {
