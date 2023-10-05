@@ -294,7 +294,7 @@
       text-align: center;
     }
     &-item_img {
-      max-height: 300px;
+      width: 100%;
       margin: 0 auto;
     }
     &-item_subs {
@@ -328,7 +328,6 @@
     width: 75%;
     top: -45%;
     padding: 10px;
-    margin-left: 0;
     &__descr {
       margin-bottom: 10px;
     }
