@@ -77,10 +77,7 @@ document.querySelector('.next').addEventListener('click', function () {
 });
 
 //modal
-$('.modal').modal({
-  backdrop: 'static',
-  keyboard: true
-});
+
 $('[data-modal=consultation').on('click', function () {
   $('.overlay, #consultation').fadeIn('slow');
 });
