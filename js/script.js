@@ -16,6 +16,7 @@
   
 // });
 // });
+$(document).ready(function(){ 
 const slider = tns({
     container: '.carousel__inner',
     items: 1,
@@ -78,21 +79,18 @@ document.querySelector('.next').addEventListener('click', function () {
 
 //modal
 
-$('[data-modal=consultation').on('click', function () {
-  $('.overlay, #consultation').fadeIn('slow');
-});
+$('[data-modal=consultation]').on('click', function() {
+        $('.overlay, #consultation').fadeIn('slow');
+    });
+    $('.modal__close').on('click', function() {
+        $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
+    });
 
-$('.modal__close').on('click', function () {
-  $('.overlay, #consultation, #order, #thanks').fadeOut('slow');
-});
 
-$('.overlay').on('click', function () {
-  $('.overlay, #consultation, #order, #thanks').fadeOut('slow');
-});
-
-$('.button_mini').each(function (i) { 
-  $(this).on('click', function () {
-    $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
-     $('.overlay, #order').fadeIn('slow');
-  });
+    $('.button_mini').each(function(i) {
+        $(this).on('click', function() {
+            $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+            $('.overlay, #order').fadeIn('slow');
+        });
+    });
  });
