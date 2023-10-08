@@ -60,7 +60,11 @@
     }
   }
 
-@media (max-width: 575px) {
+@media (max-width: 575px) 
+{
+  .container {
+    width: 550px;
+  }
   .title_left {
     font-size: 33px;
   }
@@ -186,13 +190,18 @@
     }
   }
   .modal {
-    width: 500px;
+    width: 80%;
     margin-right: 0;
     margin-left: -20px;
     &__close {
       right: 20%;
       top: 20px;
-      font-size: 60px;
+      font-size: 50px;
+    }
+  }
+  .feed-form {
+    input, button {
+      width: 70%;
     }
   }
 }
