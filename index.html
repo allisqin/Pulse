@@ -104,7 +104,7 @@
                 Просто заполните форму заявки <br>
                 и мы перезвоним вам в течении 10 минут
             </div>
-            <form class="feed-form" action="#">
+            <form id="consultation-form" class="feed-form" action="#">
                 <input name="name" required type="text" placeholder="Ваше имя">
                 <input name="phone" required type="number" placeholder="Ваш телефон">
                 <input name="email" required type="email" placeholder="Ваш E-mail">
@@ -474,39 +474,33 @@
     <div class="overlay">
         <div class="modal" id="consultation">
             <div class="modal__close">&times;</div>
-            <div class="modal__subtitle">
-                Просто заполните форму заявки
-            </div>
+            <div class="modal__subtitle">Просто заполните форму заявки</div>
             <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
             <form class="feed-form feed-form_mt25" action="#">
-                <input name="name" required type="text" placeholder="Ваше имя">
-                <input name="phone" required type="number" placeholder="Ваш телефон">
-                <input name="email" required type="email" placeholder="Ваш E-mail">
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input name="phone" placeholder="Ваш телефон">
+                <input name="email" placeholder="Ваш E-mail" type="email">
 
-                <button class="button button_submit" type="button">заказать консультацию</button>
+                <button class="button button_submit">заказать консультацию</button>
             </form>
         </div>
 
         <div class="modal" id="order">
             <div class="modal__close">&times;</div>
-            <div class="modal__subtitle">
-                Ваш заказ:
-            </div>
+            <div class="modal__subtitle">Ваш заказ:</div>
             <div class="modal__descr">Пульсометр Polar FT1</div>
             <form class="feed-form feed-form_mt25" action="#">
-                <input name="name" required type="text" placeholder="Ваше имя">
-                <input name="phone" required type="number" placeholder="Ваш телефон">
-                <input name="email" required type="email" placeholder="Ваш E-mail">
+                <input name="name" required placeholder="Ваше имя" type="text">
+                <input name="phone" required placeholder="Ваш телефон">
+                <input name="email" required placeholder="Ваш E-mail" type="email">
 
-                <button class="button button_submit" type="button">КУПИТЬ</button>
+                <button class="button button_submit">купить</button>
             </form>
         </div>
 
         <div class="modal modal_mini" id="thanks">
             <div class="modal__close">&times;</div>
-            <div class="modal__subtitle">
-                Спасибо за вашу заявку!
-            </div>
+            <div class="modal__subtitle">Спасибо за вашу заявку!</div>
             <div class="modal__descr">Наш менеджер свяжется с вами
                 в ближайшее время!</div>
         </div>
@@ -516,7 +510,7 @@
     <script src="js/slick.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
