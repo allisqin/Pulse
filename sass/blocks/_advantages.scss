@@ -29,4 +29,22 @@
             text-decoration: underline;
         }
     }
+    &__icon {
+        &_animated {
+            animation: heartbeat 1.5s ease infinite;
+            // animation-name: heartbeat;
+            // animation-duration: 1s;
+            // animation-timing-function: ease;
+            // animation-iteration-count: infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+        &_steps {
+             animation: steps 10s ease infinite;
+        }
+        &_cup {
+            animation: flash 1.5s ease infinite;
+        }
+    }
 }
